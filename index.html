@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Client Testimonial Section</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <!-- Swiper -->
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <img src="quote.png" alt="quote" class="quote" />
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore, vero optio tempora delectus totam excepturi
+                  dignissimos ipsa corporis maxime magni exercitationem non
+                  necessitatibus animi iste dolore voluptate porro. Perferendis,
+                  aut?
+                </p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="user1.png" alt="user1" />
+                  </div>
+                  <h3>Someone Famous<br /><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <img src="quote.png" alt="quote" class="quote" />
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore, vero optio tempora delectus totam excepturi
+                  dignissimos ipsa corporis maxime magni exercitationem non
+                  necessitatibus animi iste dolore voluptate porro. Perferendis,
+                  aut?
+                </p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="user1.png" alt="user1" />
+                  </div>
+                  <h3>Someone Famous<br /><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <img src="quote.png" alt="quote" class="quote" />
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore, vero optio tempora delectus totam excepturi
+                  dignissimos ipsa corporis maxime magni exercitationem non
+                  necessitatibus animi iste dolore voluptate porro. Perferendis,
+                  aut?
+                </p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="user1.png" alt="user1" />
+                  </div>
+                  <h3>Someone Famous<br /><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
